@@ -21,6 +21,7 @@ console.log(" O Array original: " + meuArr + "\n O Array modificado mas baseado 
 //DESAFIO DO REDUCE
 let arr2 = [10,10] //Criando um array
 let meuReduce = (callback) => {
+    //Armazenando a arrow function na variável
     let total = null;
 
     for (const iterator in arr2) {
@@ -40,7 +41,8 @@ let meuReduce = (callback) => {
     return total;
 }
 function maiorQueDois(i) {
-    return arr2[i];
+    //função que dita uma condição,no caso se é maior que dois
+    return arr2[i] > 2;
 }
 
 
